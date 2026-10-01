@@ -1,0 +1,105 @@
+{
+    "Changes": [
+
+        {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/KeyLimeCows, Mods/{{ModId}}/BabyKeyLimeCows, Mods/{{ModId}}/KeyLimeCowShopTexture",
+            "FromFile": "Assets/{{TargetWithoutPath}}.png"
+        },
+        
+       {
+         "Action": "EditData",
+         "Target": "Data/FarmAnimals",
+         "Entries": {
+
+           "{{ModId}}_KeyLimeCows": {
+    "DisplayName": "Key Lime Cows",
+    "House": "Barn",
+    "Gender": "Female",
+    "PurchasePrice": 500,
+    "SellPrice": 800,
+    "ShopTexture": "Mods\\{{ModId}}\\KeyLimeCowShopTexture",
+    "ShopSourceRect": {
+      "X": 0,
+      "Y": 0,
+      "Width": 32,
+      "Height": 16
+    },
+    "ShopDisplayName": "Key Lime Cows",
+    "ShopDescription": "Cows that produce Key Lime! They always smell a little like Limes.",
+    "ShopMissingBuildingDescription": null,
+    "RequiredBuilding": "Big Barn",
+    "UnlockCondition": null,
+    "AlternatePurchaseTypes": null,
+    "EggItemIds": null,
+    "IncubationTime": -1,
+    "IncubatorParentSheetOffset": 1,
+    "BirthText": null,
+    "DaysToMature": 4,
+    "CanGetPregnant": true,
+    "DaysToProduce": 3,
+    "HarvestType": "HarvestWithTool",
+    "HarvestTool": "Milk Pail",
+    "ProduceItemIds": [
+      {
+        "Id": "Default",
+        "Condition": null,
+        "MinimumFriendship": 0,
+        "ItemId": "{{ModId}}_KeyLime"
+      }
+    ],
+    "DeluxeProduceItemIds": [
+      {
+        "Id": "Default",
+        "Condition": null,
+        "MinimumFriendship": 0,
+        "ItemId": "{{ModId}}_LgKeyLime"
+      }
+    ],
+    "ProduceOnMature": true,
+    "FriendshipForFasterProduce": 900,
+    "DeluxeProduceMinimumFriendship": 200,
+    "DeluxeProduceCareDivisor": 1200.0,
+    "DeluxeProduceLuckMultiplier": 0.0,
+    "CanEatGoldenCrackers": true,
+    "ProfessionForHappinessBoost": 3,
+    "ProfessionForQualityBoost": 3,
+    "ProfessionForFasterProduce": 3,
+    "Sound": "cow",
+    "BabySound": null,
+    "Texture": "Mods\\{{ModId}}\\KeyLimeCows",
+    "BabyTexture": "Mods\\{{ModId}}\\BabyKeyLimeCows",
+    "UseFlippedRightForLeft": true,
+    "SpriteWidth": 32,
+    "SpriteHeight": 32,
+    "UseDoubleUniqueAnimationFrames": false,
+    "SleepFrame": 12,
+    "EmoteOffset": {
+      "X": 0,
+      "Y": 0
+    },
+    "SwimOffset": {
+      "X": 0,
+      "Y": 112
+    },
+    "Skins": null,
+    "ShadowWhenBabySwims": null,
+    "ShadowWhenBaby": null,
+    "ShadowWhenAdultSwims": null,
+    "ShadowWhenAdult": null,
+    "CanSwim": false,
+    "BabiesFollowAdults": false,
+    "GrassEatAmount": 4,
+    "HappinessDrain": 5,
+    "UpDownPetHitboxTileSize": "1.5, 1.75",
+    "LeftRightPetHitboxTileSize": "1.75, 1.25",
+    "BabyUpDownPetHitboxTileSize": "1, 1.75",
+    "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+    "StatToIncrementOnProduce": null,
+    "ShowInSummitCredits": true,
+    "CustomFields": null
+}
+         }
+        }
+        ]
+    }

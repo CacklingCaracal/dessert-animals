@@ -1,0 +1,99 @@
+ {
+    "Changes": [
+         {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/JawbreakerDino,  Mods/{{ModId}}/JawbreakerDinoShopTexture",
+            "FromFile": "Assets/{{TargetWithoutPath}}.png"
+        },
+       {
+         "Action": "EditData",
+         "Target": "Data/FarmAnimals",
+         "Entries": {
+
+           "{{ModId}}_JawbreakerDino": {
+    "DisplayName": "{{i18n:JawbreakerDino.DisplayName}}",
+    "House": "Coop",
+    "Gender": "Female",
+    "PurchasePrice": 8000,
+    "SellPrice": 4000,
+    "ShopTexture": "Mods\\{{ModId}}\\JawbreakerDinoShopTexture",
+    "ShopSourceRect": {
+      "X": 0,
+      "Y": 0,
+      "Width": 0,
+      "Height": 0
+    },
+    "ShopDisplayName": null,
+    "ShopDescription": "{{i18n:JawbreakerDino.ShopDescription}}",
+    "ShopMissingBuildingDescription": null,
+    "RequiredBuilding": "Deluxe Coop",
+    "UnlockCondition": null,
+    "AlternatePurchaseTypes": null,
+    "EggItemIds": [
+      "{{ModId}}_JawbreakerEgg"
+    ],
+    "IncubationTime": 9000,
+    "IncubatorParentSheetOffset": 1,
+    "BirthText": "{{i18n:JawbreakerDino.BirthText}}",
+    "DaysToMature": 0,
+    "CanGetPregnant": false,
+    "DaysToProduce": 7,
+    "HarvestType": "DropOvernight",
+    "HarvestTool": null,
+    "ProduceItemIds": [
+      {
+        "Id": "Default",
+        "Condition": null,
+        "MinimumFriendship": 0,
+        "ItemId": "{{ModId}}_JawbreakerEgg"
+      }
+    ],
+    "DeluxeProduceItemIds": [],
+    "ProduceOnMature": false,
+    "FriendshipForFasterProduce": -1,
+    "DeluxeProduceMinimumFriendship": 200,
+    "DeluxeProduceCareDivisor": 1200.0,
+    "DeluxeProduceLuckMultiplier": 0.0,
+    "CanEatGoldenCrackers": true,
+    "ProfessionForHappinessBoost": 2,
+    "ProfessionForQualityBoost": 2,
+    "ProfessionForFasterProduce": -1,
+    "Sound": null,
+    "BabySound": null,
+    "Texture": "Mods\\{{ModId}}\\JawbreakerDino",
+    "HarvestedTexture": null,
+    "BabyTexture": null,
+    "UseFlippedRightForLeft": true,
+    "SpriteWidth": 16,
+    "SpriteHeight": 16,
+    "UseDoubleUniqueAnimationFrames": true,
+    "SleepFrame": 16,
+    "EmoteOffset": {
+      "X": 0,
+      "Y": -16
+    },
+    "SwimOffset": {
+      "X": 0,
+      "Y": 112
+    },
+    "Skins": null,
+    "ShadowWhenBabySwims": null,
+    "ShadowWhenBaby": null,
+    "ShadowWhenAdultSwims": null,
+    "ShadowWhenAdult": null,
+    "CanSwim": false,
+    "BabiesFollowAdults": false,
+    "GrassEatAmount": 2,
+    "HappinessDrain": 3,
+    "UpDownPetHitboxTileSize": "1, 1",
+    "LeftRightPetHitboxTileSize": "1, 1",
+    "BabyUpDownPetHitboxTileSize": "1, 1",
+    "BabyLeftRightPetHitboxTileSize": "1, 1",
+    "StatToIncrementOnProduce": null,
+    "ShowInSummitCredits": true,
+    "CustomFields": null
+}
+         }
+        }
+    ]
+}

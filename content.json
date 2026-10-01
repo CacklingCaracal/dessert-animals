@@ -1,0 +1,138 @@
+
+{
+    "Format": "2.9.0", 
+    "ConfigSchema": {
+
+
+"MallowHens": {
+    "AllowValues": "Enabled, Disabled",
+    "Default": "Enabled",
+    "Section": "Animals",
+    "Description": "Disable to opt out of the Mallow Hens."
+},
+"PeanutButterHens": {
+    "AllowValues": "Enabled, Disabled",
+    "Default": "Enabled",
+    "Section": "Animals",
+    "Description": "Disable to opt out of the PeanutButter Hens."
+},
+"Orange Creamsicle Cows": {
+    "AllowValues": "Enabled, Disabled",
+    "Default": "Enabled",
+    "Section": "Animals",
+    "Description": "Disable to opt out of the Orange Creamsicle Cows."
+},
+"KeyLimeCows": {
+    "AllowValues": "Enabled, Disabled",
+    "Default": "Enabled",
+    "Section": "Animals",
+    "Description": "Disable to opt out of the Key Lime Cows."
+},
+"PuddiPuddi": {
+    "AllowValues": "Enabled, Disabled",
+    "Default": "Enabled",
+    "Section": "Animals",
+    "Description": "Disable to opt out of the PuddiPuddi (sentient custard)."
+},
+"GingerbreadGoats": {
+    "AllowValues": "Enabled, Disabled",
+    "Default": "Enabled",
+    "Section": "Animals",
+    "Description": "Disable to opt out of the Gingerbread Goats."
+},
+"CandyApplePigs": {
+    "AllowValues": "Enabled, Disabled",
+    "Default": "Enabled",
+    "Section": "Animals",
+    "Description": "Disable to opt out of the Candy Apple Pigs."
+},
+"CaramelApplePigs": {
+    "AllowValues": "Enabled, Disabled",
+    "Default": "Enabled",
+    "Section": "Animals",
+    "Description": "Disable to opt out of the Caramel Apple Pigs."
+},
+"HunnyBunnies": {
+    "AllowValues": "Enabled, Disabled",
+    "Default": "Enabled",
+    "Section": "Animals",
+    "Description": "Disable to opt out of the Hunny Bunnies."
+},
+"ChaiSpiceRabbits": {
+    "AllowValues": "Enabled, Disabled",
+    "Default": "Enabled",
+    "Section": "Animals",
+    "Description": "Disable to opt out of the Chai Spice Rabbits."
+},
+"LemonBarRabbits": {
+    "AllowValues": "Enabled, Disabled",
+    "Default": "Enabled",
+    "Section": "Animals",
+    "Description": "Disable to opt out of the Lemon Bar Rabbits."
+},
+"JawbreakerDino": {
+    "AllowValues": "Enabled, Disabled",
+    "Default": "Enabled",
+    "Section": "Animals",
+    "Description": "Disable to opt out of the Jawbreaker Dino."
+},
+"PinkCottonCandySheep": {
+    "AllowValues": "Enabled, Disabled",
+    "Default": "Enabled",
+    "Section": "Animals",
+    "Description": "Disable to opt out of the Pink Cotton Candy Sheep."
+},
+"BlueCottonCandySheep": {
+    "AllowValues": "Enabled, Disabled",
+    "Default": "Enabled",
+    "Section": "Animals",
+    "Description": "Disable to opt out of the Blue Cotton Candy Sheep."
+},
+"BananaPuddingOstrich": {
+    "AllowValues": "Enabled, Disabled",
+    "Default": "Enabled",
+    "Section": "Animals",
+    "Description": "Disable to opt out of the Banana Pudding Ostriches."
+},
+"Fish": {
+    "AllowValues": "Enabled, Disabled",
+    "Default": "Enabled",
+    "Section": "Fish",
+    "Description": "Disable to opt out of the Fish added by this mod."
+},
+  "CookingRecipes": {
+  "AllowValues": "Enabled, Disabled",
+  "Default": "Enabled",
+  "Section": "Recipes",
+  "Description": "Disable to opt out of the cooking recipes added by this mod."
+        }
+    },
+"Changes": [
+
+    {
+        "LogName": "Livestock Animal Includes",
+        "Action": "Include",
+        "FromFile": "Data/AnimalData/CottonCandySheepData.json, Data/AnimalData/JawbreakerDino.json, Data/AnimalData/OrangeCreamsicleCows.json, Data/AnimalData/HunnyBunniesData.json, Data/AnimalData/PuddiPuddiData.json, Data/AnimalData/MallowHenData.json, Data/AnimalData/CottonCandySheepData.json, Data/AnimalData/CandyApplePigsData.json, Data/AnimalData/PeanutButterHensData.json, Data/AnimalData/KeyLimeCows.json, Data/AnimalData/LemonBarBunnies.json, Data/AnimalData/ChaiSpiceRabbits.json, Data/AnimalData/CaramelApplePigsData.json, Data/AnimalData/BananaPuddingOstrich.json, Data/AnimalData/GingerbreadGoats.json"
+    },
+    {
+        "LogName": "Cooking Recipes Include",
+        "Action": "Include",
+        "FromFile": "Data/CookingRecipes.json"
+    },
+    {
+        "LogName": "Object Includes",
+        "Action": "Include",
+        "FromFile": "Data/Objects.json"
+    },
+    {
+        "LogName": "Fish Includes",
+        "Action": "Include",
+        "FromFile": "Data/FishData/FishData.json"
+    },
+    {
+        "LogName": "Machine Includes",
+        "Action": "Include",
+        "FromFile": "Data/bigcraftables.json, Data/CandyMachine.json"
+    }
+]
+}

@@ -1,0 +1,23 @@
+ {
+    "Changes": [
+        {
+            "LogName": "Dessert Animal Recipes",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_HoneyButterToastRecipe": "216 1 {{ModId}}_HoneyButterSpread 1/1 1/{{ModId}}_HoneyButterToast 1/default/{{i18n:HoneyButterToastRecipe.DisplayName}}",
+                "{{ModId}}_PeanutButterToastRecipe": "216 1 {{ModId}}_PeanutButterSpread 1/1 1/{{ModId}}_PeanutButterToast 1/default/{{i18n:PeanutButterToastRecipe.DisplayName}}",
+                "{{ModId}}_FlufferNutterSandwichRecipe": "216 1 {{ModId}}_PeanutButterSpread 1 {{ModId}}_MarshmallowSpread 1/1 1/{{ModId}}_FlufferNutterSandwich 1/default/{{i18n:FlufferNutterSandwichRecipe.DisplayName}}",
+                "{{ModId}}_KeyLimePieRecipe": "246 1 245 1 {{ModId}}_KeyLime 1/1 1/{{ModId}}_KeyLimePie 1/default/{{i18n:KeyLimePieRecipe.DisplayName}}",
+                "{{ModId}}_LemonCurdPieRecipe": "246 1 {{ModId}}_LemonCurdSpread 1 245 1/1 1/{{ModId}}_LemonCurdPie 1/default/{{i18n:LemonCurdPieRecipe.DisplayName}}",
+                "{{ModId}}_OrangeCreamsicleSherbertRecipe": "246 1 245 1 184 1 {{ModId}}_OrangeCreamsicle 1/1 1/{{ModId}}_OrangeCreamsicleSherbertRecipe/default/{{i18n:OrangeCreamsicleSherbertRecipe.DisplayName}}",
+                "{{ModId}}_KeyLimeSherbertRecipe": "245 1 84 1 184 1 {{ModId}}_KeyLime 1/1 1/{{ModId}}_KeyLimeSherbert 1/default/{{i18n:KeyLimeSherbertRecipe.DisplayName}}",
+                "{{ModId}}_LemonSherbertRecipe":  "245 1 84 1 184 1 {{ModId}}_LemonCurdFluff 1/1 1/{{ModId}}_LemonSherbert 1/default/{{i18n:LemonSherbertRecipe.DisplayName}}",
+                "{{ModId}}_SpicedChaiIceCreamRecipe":  "245 1 84 1 184 1 {{ModId}}_ChaiSpiceFluff 1/1 1/{{ModId}}_SpicedChaiSherbert 1/default/{{i18n:SpicedChaiIceCreamRecipe.DisplayName}}",
+                "{{ModId}}_ChaiTeaRecipe": "{{ModId}}_ChaiSpices 1 184 1 82 1/1 1/{{ModId}}_ChaiTea/default/{{i18n:ChaiTeaRecipe.DisplayName}}",
+                "{{ModId}}_ChaiSpicesRecipe": "{{ModId}}_ChaiSpiceFluff 2/1 1/{{ModId}}_ChaiSpices/default/{{i18n:ChaiSpicesRecipe.DisplayName}}",
+                "{{ModId}}_GingerbreadCookie": "{{ModId}}_Gingerbread 1 176 1 246 1/1 1/{{ModId}}_GingerbreadCookie/default "
+            }
+        }
+    ]
+}

@@ -1,0 +1,134 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/BananaPuddingOstrich, Mods/{{ModId}}/BabyBananaPuddingOstrich,  Mods/{{ModId}}/BananaPuddingOstrichShopTexture",
+      "FromFile": "Assets/{{TargetWithoutPath}}.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "{{ModId}}_BananaPuddingOstrich": {
+          "DisplayName": "{{i18n:BananaPuddingOstrich.DisplayName}}",
+          "House": "Barn",
+          "Gender": "MaleorFemale",
+          "PurchasePrice": 8000,
+          "SellPrice": 16000,
+          "ShopTexture": "Mods\\{{ModId}}\\BananaPuddingOstrichShopTexture",
+          "ShopSourceRect": {
+            "X": 0,
+            "Y": 0,
+            "Width": 32,
+            "Height": 16
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": "{{i18n:BananaPuddingOstrich.ShopDescription}}",
+          "ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5931]",
+          "RequiredBuilding": "Big Barn",
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": null,
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": "{{i18n:BananaPuddingOstrich.BirthText}}",
+          "DaysToMature": 4,
+          "CanGetPregnant": true,
+          "DaysToProduce": 6,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "MinimumFriendship": 0,
+              "ItemId": "{{ModId}}_BananaPuddingEgg"
+            }
+          ],
+          "DeluxeProduceItemIds": [],
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200.0,
+          "DeluxeProduceLuckMultiplier": 0.0,
+          "CanEatGoldenCrackers": true,
+          "ProfessionForHappinessBoost": 3,
+          "ProfessionForQualityBoost": 3,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "Ostrich",
+          "BabySound": null,
+          "Texture": "Mods\\{{ModId}}\\BananaPuddingOstrich",
+          "HarvestedTexture": null,
+          "BabyTexture": "Mods\\{{ModId}}\\BabyBananaPuddingOstrich",
+          "UseFlippedRightForLeft": true,
+          "SpriteWidth": 32,
+          "SpriteHeight": 32,
+          "UseDoubleUniqueAnimationFrames": false,
+          "SleepFrame": 12,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": 0
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": null,
+          "ShadowWhenBaby": null,
+          "ShadowWhenAdultSwims": null,
+          "ShadowWhenAdult": null,
+          "CanSwim": false,
+          "BabiesFollowAdults": false,
+          "GrassEatAmount": 4,
+          "HappinessDrain": 5,
+          "UpDownPetHitboxTileSize": "1.5, 2",
+          "LeftRightPetHitboxTileSize": "2, 2",
+          "BabyUpDownPetHitboxTileSize": "1, 1",
+          "BabyLeftRightPetHitboxTileSize": "1, 1",
+          "StatToIncrementOnProduce": null,
+          "ShowInSummitCredits": true,
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "LogName": "Add Vanilla Wafer Feather",
+      "Action": "EditData",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+      "TargetField": [
+        "{{ModId}}_BananaPuddingOstrich",
+        "ExtraProduceSpawnList"
+      ],
+      "Entries": {
+        "{{ModId}}_VanillaWaferFeather": {
+          "Id": "{{ModId}}_VanillaWaferFeather",
+          "ProduceItemIds": [
+            {
+              "Id": "{{ModId}}_VanillaWaferFeather",
+              "ItemId": "{{ModId}}_VanillaWaferFeather",
+              "MinimumFriendship": 100,
+              "HarvestTool": "Shears"
+            }
+          ],
+          "DaysToProduce": 7,
+          "SyncWithMainProduce": false
+        }
+      }
+    },
+    {
+      "LogName": "Shear for vanilla wafers",
+      "Action": "EditData",
+      "Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+      "TargetField": [
+        "{{ModId}}_BananaPuddingOstrich",
+        "AnimalProduceExtensionData"
+      ],
+      "Entries": {
+        "{{ModId}}_VanillaWafterFeather": {
+          "HarvestTool": "Shears"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+    "Changes": [
+
+        {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/ChaiSpiceRabbits, Mods/{{ModId}}/BabyChaiSpiceRabbits,  Mods/{{ModId}}/ChaiSpiceRabbitsShopTexture",
+            "FromFile": "Assets/{{TargetWithoutPath}}.png"
+        },
+       {
+         "Action": "EditData",
+         "Target": "Data/FarmAnimals",
+         "Entries": {
+
+           "{{ModId}}_ChaiSpiceRabbits": {
+    "DisplayName": "{{i18n:ChaiSpiceRabbits.DisplayName}}",
+    "House": "Coop",
+    "Gender": "MaleOrFemale",
+    "PurchasePrice": 4000,
+    "SellPrice": 8000,
+    "ShopTexture": "Mods\\{{ModId}}\\ChaiSpiceRabbitsShopTexture",
+    "ShopSourceRect": {
+      "X": 0,
+      "Y": 0,
+      "Width": 32,
+      "Height": 16
+    },
+    "ShopDisplayName": null,
+    "ShopDescription": "{{i18n:ChaiSpiceRabbits.ShopDescription}}",
+    "ShopMissingBuildingDescription": null,
+    "RequiredBuilding": "Deluxe Coop",
+    "UnlockCondition": null,
+    "CanGetPregnant": false,
+    "DaysToProduce": 3,
+    "HarvestType": "DropOvernight",
+    "HarvestTool": "none",
+    "ProduceItemIds": [
+      {
+        "Id": "Default",
+        "Condition": null,
+        "MinimumFriendship": 0,
+        "ItemId": "{{ModId}}_ChaiSpiceFluff"
+      },
+      {
+        "Id": "Default",
+        "Condition": null,
+        "MinimumFriendship":0,
+        "ItemId":"{{ModId}}_SpicedBun"
+      }
+    
+    ],
+    "ProduceOnMature": false,
+    "FriendshipForFasterProduce": -1,
+    "DeluxeProduceMinimumFriendship": 200,
+    "DeluxeProduceCareDivisor": 1200.0,
+    "DeluxeProduceLuckMultiplier": 0.0,
+    "CanEatGoldenCrackers": true,
+    "ProfessionForHappinessBoost": 2,
+    "ProfessionForQualityBoost": 2,
+    "ProfessionForFasterProduce": -1,
+    "Sound": "rabbit",
+    "BabySound": null,
+    "Texture": "Mods\\{{ModId}}\\ChaiSpiceRabbits",
+    "HarvestedTexture": null,
+    "BabyTexture": "Mods\\{{ModId}}\\BabyChaiSpiceRabbits",
+    "UseFlippedRightForLeft": true,
+    "SpriteWidth": 16,
+    "SpriteHeight": 16,
+    "UseDoubleUniqueAnimationFrames": true,
+    "SleepFrame": 16,
+    "EmoteOffset": {
+      "X": 0,
+      "Y": -16
+    },
+    "SwimOffset": {
+      "X": 0,
+      "Y": 112
+    },
+    "Skins": null,
+    "ShadowWhenBabySwims": null,
+    "ShadowWhenBaby": null,
+    "ShadowWhenAdultSwims": null,
+    "ShadowWhenAdult": null,
+    "CanSwim": false,
+    "BabiesFollowAdults": true,
+    "GrassEatAmount": 2,
+    "HappinessDrain": 7,
+    "UpDownPetHitboxTileSize": "1, 1",
+    "LeftRightPetHitboxTileSize": "1, 1",
+    "BabyUpDownPetHitboxTileSize": "1, 1",
+    "BabyLeftRightPetHitboxTileSize": "1, 1",
+    "StatToIncrementOnProduce": [
+     
+    ],
+    "ShowInSummitCredits": false,
+    "CustomFields": null
+         }
+         }
+        }
+        ]
+}

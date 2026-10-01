@@ -1,0 +1,36 @@
+
+
+{
+	"Changes": [
+		
+			{
+				
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/craftables",
+            "FromFile": "assets/craftables.png"
+			},
+
+			{
+			"Action": "EditData",
+			"Target": "Data/BigCraftables",
+			"Entries": {
+				"{{ModId}}_CandyMachine": {
+					"Name": "{{ModId}}_CandyMachine",
+					"DisplayName": "{{i18n:CandyMachine.name}}",
+					"Description": "{{i18n:CandyMachine.description}}",
+					"Texture": "Mods\\{{ModId}}\\craftables",
+					"SpriteIndex": 0
+                }
+            }
+        },
+        	{
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Entries": {
+
+
+"{{ModId}}_CandyMachine": "388 20 338 1 92 20/Home/{{ModId}}_CandyMachine/true/Farming 2"
+            }
+        }
+    ]
+}

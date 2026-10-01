@@ -1,0 +1,191 @@
+{
+    "Changes": [
+
+        {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/PinkCottonCandySheep, Mods/{{ModId}}/BabyPinkCottonCandySheep, Mods/{{ModId}}/ShearedPinkCottonCandySheep, Mods/{{ModId}}/PinkCottonCandySheepShopTexture",
+            "FromFile": "Assets/{{TargetWithoutPath}}.png"
+        },
+       {
+         "Action": "EditData",
+         "Target": "Data/FarmAnimals",
+         "Entries": {
+
+           "{{ModId}}_PinkCottonCandySheep": {
+    "DisplayName": "{{i18n:PinkCottonCandySheep.DisplayName}}",
+    "House": "Barn",
+    "Gender": "Female",
+    "PurchasePrice": 500,
+    "SellPrice": 800,
+    "ShopTexture": "Mods\\{{ModId}}\\PinkCottonCandySheepShopTexture",
+    "ShopSourceRect": {
+      "X": 0,
+      "Y": 0,
+      "Width": 32,
+      "Height": 16
+    },
+    "ShopDisplayName": null,
+    "ShopDescription": "{{i18n:PinkCottonCandySheep.ShopDescription}}",
+    "ShopMissingBuildingDescription": null,
+    "RequiredBuilding": "Deluxe Barn",
+    "UnlockCondition": null,
+    "AlternatePurchaseTypes": null,
+    "EggItemIds": null,
+    "IncubationTime": -1,
+    "IncubatorParentSheetOffset": 1,
+    "BirthText": null,
+    "DaysToMature": 4,
+    "CanGetPregnant": true,
+    "DaysToProduce": 3,
+    "HarvestType": "HarvestWithTool",
+    "HarvestTool": "Shears",
+    "ProduceItemIds": [
+      {
+        "Id": "Default",
+        "Condition": null,
+        "MinimumFriendship": 0,
+        "ItemId": "{{ModId}}_PinkCottonCandyWool"
+      }
+    ],
+    "DeluxeProduceItemIds": [],
+    "ProduceOnMature": true,
+    "FriendshipForFasterProduce": 900,
+    "DeluxeProduceMinimumFriendship": 200,
+    "DeluxeProduceCareDivisor": 1200.0,
+    "DeluxeProduceLuckMultiplier": 0.0,
+    "CanEatGoldenCrackers": true,
+    "ProfessionForHappinessBoost": 3,
+    "ProfessionForQualityBoost": 3,
+    "ProfessionForFasterProduce": 3,
+    "Sound": "sheep",
+    "BabySound": null,
+    "Texture": "Mods\\{{ModId}}\\PinkCottonCandySheep",
+    "HarvestedTexture": "Mods\\{{ModId}}\\ShearedPinkCottonCandySheep",
+    "BabyTexture": "Mods\\{{ModId}}\\BabyPinkCottonCandySheep",
+    "UseFlippedRightForLeft": true,
+    "SpriteWidth": 32,
+    "SpriteHeight": 32,
+    "UseDoubleUniqueAnimationFrames": false,
+    "SleepFrame": 12,
+    "EmoteOffset": {
+      "X": 0,
+      "Y": 0
+    },
+    "SwimOffset": {
+      "X": 0,
+      "Y": 112
+    },
+    "Skins": null,
+    "ShadowWhenBabySwims": null,
+    "ShadowWhenBaby": null,
+    "ShadowWhenAdultSwims": null,
+    "ShadowWhenAdult": null,
+    "CanSwim": false,
+    "BabiesFollowAdults": false,
+    "GrassEatAmount": 4,
+    "HappinessDrain": 5,
+    "UpDownPetHitboxTileSize": "1.5, 1.75",
+    "LeftRightPetHitboxTileSize": "1.75, 1.25",
+    "BabyUpDownPetHitboxTileSize": "1, 1.75",
+    "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+    "StatToIncrementOnProduce": null,
+    "ShowInSummitCredits": true,
+    "CustomFields": null
+}
+         }
+        },
+            {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/BlueCottonCandySheep, Mods/{{ModId}}/BabyBlueCottonCandySheep, Mods/{{ModId}}/ShearedBlueCottonCandySheep, Mods/{{ModId}}/BlueCottonCandySheepShopTexture",
+            "FromFile": "Assets/{{TargetWithoutPath}}.png"
+        },
+       {
+         "Action": "EditData",
+         "Target": "Data/FarmAnimals",
+         "Entries": {
+
+           "{{ModId}}_BlueCottonCandySheep": {
+    "DisplayName": "{{i18n:BlueCottonCandySheep.DisplayName}}",
+    "House": "Barn",
+    "Gender": "Female",
+    "PurchasePrice": 500,
+    "SellPrice": 800,
+    "ShopTexture": "Mods\\{{ModId}}\\BlueCottonCandySheepShopTexture",
+    "ShopSourceRect": {
+      "X": 0,
+      "Y": 0,
+      "Width": 32,
+      "Height": 16
+    },
+    "ShopDisplayName": null,
+    "ShopDescription": "{{i18n:BlueCottonCandySheep.ShopDescription}}",
+    "ShopMissingBuildingDescription": null,
+    "RequiredBuilding": "Deluxe Barn",
+    "UnlockCondition": null,
+    "AlternatePurchaseTypes": null,
+    "EggItemIds": null,
+    "IncubationTime": -1,
+    "IncubatorParentSheetOffset": 1,
+    "BirthText": null,
+    "DaysToMature": 4,
+    "CanGetPregnant": true,
+    "DaysToProduce": 3,
+    "HarvestType": "HarvestWithTool",
+    "HarvestTool": "Shears",
+    "ProduceItemIds": [
+      {
+        "Id": "Default",
+        "Condition": null,
+        "MinimumFriendship": 0,
+        "ItemId": "{{ModId}}_BlueCottonCandyWool"
+      }
+    ],
+    "DeluxeProduceItemIds": [],
+    "ProduceOnMature": true,
+    "FriendshipForFasterProduce": 900,
+    "DeluxeProduceMinimumFriendship": 200,
+    "DeluxeProduceCareDivisor": 1200.0,
+    "DeluxeProduceLuckMultiplier": 0.0,
+    "CanEatGoldenCrackers": true,
+    "ProfessionForHappinessBoost": 3,
+    "ProfessionForQualityBoost": 3,
+    "ProfessionForFasterProduce": 3,
+    "Sound": "sheep",
+    "BabySound": null,
+    "Texture": "Mods\\{{ModId}}\\BlueCottonCandySheep",
+    "HarvestedTexture": "Mods\\{{ModId}}\\ShearedBlueCottonCandySheep",
+    "BabyTexture": "Mods\\{{ModId}}\\BabyBlueCottonCandySheep",
+    "UseFlippedRightForLeft": true,
+    "SpriteWidth": 32,
+    "SpriteHeight": 32,
+    "UseDoubleUniqueAnimationFrames": false,
+    "SleepFrame": 12,
+    "EmoteOffset": {
+      "X": 0,
+      "Y": 0
+    },
+    "SwimOffset": {
+      "X": 0,
+      "Y": 112
+    },
+    "Skins": null,
+    "ShadowWhenBabySwims": null,
+    "ShadowWhenBaby": null,
+    "ShadowWhenAdultSwims": null,
+    "ShadowWhenAdult": null,
+    "CanSwim": false,
+    "BabiesFollowAdults": false,
+    "GrassEatAmount": 4,
+    "HappinessDrain": 5,
+    "UpDownPetHitboxTileSize": "1.5, 1.75",
+    "LeftRightPetHitboxTileSize": "1.75, 1.25",
+    "BabyUpDownPetHitboxTileSize": "1, 1.75",
+    "BabyLeftRightPetHitboxTileSize": "1.75, 1",
+    "StatToIncrementOnProduce": null,
+    "ShowInSummitCredits": true,
+    "CustomFields": null
+}
+         }
+        }
+        ]
+    }

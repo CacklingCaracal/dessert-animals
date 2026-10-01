@@ -1,0 +1,23 @@
+
+{
+    "Name": "Dessert Animals",
+    "Author": "CacklingCaracal",
+    "Version": "1.8",
+    "Description": "Adds Coop and Barn animals themed after desserts as well as a few fish.",
+    "UniqueID": "CacklingCaracal.DessertAnimals",
+    "UpdateKeys": ["Nexus: 43140"],
+    "ContentPackFor": 
+    {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies": [
+		{
+			"UniqueID": "selph.ExtraMachineConfig",
+			"IsRequired": true
+		},
+        {
+            "UniqueID": "selph.ExtraAnimalConfig",
+            "IsRequired": true
+        }
+    ]
+}

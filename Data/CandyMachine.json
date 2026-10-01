@@ -1,0 +1,396 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "Entries": {
+        "(BC){{ModId}}_CandyMachine": {
+          "OutputRules": [
+            {
+              "Id": "{{ModId}}_MarshmallowSpread",
+              "Triggers": [
+                {
+                  "RequiredTags": [
+                    "Mallow_Egg"
+                  ]
+                }
+              ],
+              "OutputItem": [
+                {
+                  "ItemId": "{{ModId}}_MarshmallowSpread",
+                  "CopyQuality": true
+                }
+              ],
+              "MinutesUntilReady": 60
+            },
+            {
+              "Id": "{{ModId}}_LemonCurdSpread",
+              "Triggers": [
+                {
+                  "RequiredItemId": "{{ModId}}_LemonCurdFluff"
+                }
+              ],
+              "OutputItem": [
+                {
+                  "ItemId": "{{ModId}}_LemonCurdSpread"
+                }
+              ],
+              "MinutesUntilReady": 60
+            },
+            {
+              "Id": "{{ModId}}_SpicedChaiSpread",
+              "Triggers": [
+                {
+                  "RequiredItemId": "{{ModId}}_ChaiSpiceFluff"
+                }
+              ],
+              "OutputItem": [
+                {
+                  "ItemId": "{{ModId}}_SpicedChaiSpread"
+                }
+              ],
+              "MinutesUntilReady": 60
+            },
+            {
+              "Id": "{{ModId}}_HoneyButterSpread",
+              "Triggers": [
+                {
+                  "RequiredItemId": "{{ModId}}_HoneyButterFluff"
+                }
+              ],
+              "OutputItem": [
+                {
+                  "ItemId": "{{ModId}}_HoneyButterSpread"
+                }
+              ],
+              "MinutesUntilReady": 60
+            },
+            {
+              "Id": "{{ModId}}_PeanutButterSpread",
+              "Triggers": [
+                {
+                  "RequiredItemId": "{{ModId}}_SmPeanutButterEgg",
+                  "CopyQuality": true
+                }
+              ],
+              "OutputItem": [
+                {
+                  "ItemId": "{{ModId}}_PeanutButterSpread"
+                }
+              ],
+              "MinutesUntilReady": 60
+            },
+              {
+              "Id": "{{ModId}}_LgPeanutButterSpread",
+              "Triggers": [
+                {
+                  "RequiredItemId": "{{ModId}}_LgPeanutButterEgg",
+                  "CopyQuality": true
+                }
+              ],
+              "OutputItem": [
+                {
+                  "ItemId": "{{ModId}}_PeanutButterSpread"
+                }
+              ],
+              "MinutesUntilReady": 80
+            },
+            {
+              "Id": "{{ModId}}_FlavoredMarshmallow",
+              "Triggers": [
+                {
+                  "RequiredTags": [
+                    "category_fruits"
+                  ]
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_FlavoredMarshmallow",
+                  "ItemId": "{{ModId}}_FlavoredMarshmallow",
+                  "ObjectInternalName": "{0} {{ModId}}_FlavoredMarshmallow",
+                  "ObjectDisplayName": "[LocalizedText Strings/Objects:{{ModId}}_FlavoredMarshmallow %PRESERVED_DISPLAY_NAME]",
+                  "PreserveId": "DROP_IN",
+                  "CopyPrice": true,
+                  "CustomData": {
+                    "selph.ExtraMachineConfig.CopyColor": "true",
+                    "selph.ExtraMachineConfig.RequirementId.1": "{{ModId}}_MarshmallowSpread",
+                    "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:Flavored.MarshmallowRequirementInvalidMsg.1}}"
+                  },
+                  "PriceModifiers": [
+                    {
+                      "Id": "FlavoredMarshmallow",
+                      "Modification": "Multiply",
+                      "Amount": 2
+                    },
+                    {
+                      "Id": "MarshmallowBase",
+                      "Modification": "Add",
+                      "Amount": 250
+                    }
+                  ]
+                }
+              ],
+              "MinutesUntilReady": 180
+            },
+            {
+              "Id": "{{ModId}}_FlavoredIcing",
+              "Triggers": [
+                {
+                  "RequiredTags": [
+                    "category_fruits"
+                  ]
+                }
+              ],
+              "OutputItem": [
+                {
+                  "Id": "{{ModId}}_FlavoredIcing",
+                  "ItemId": "{{ModId}}_FlavoredIcing",
+                  "ObjectInternalName": "{0} {{ModId}}_FlavoredIcing",
+                  "ObjectDisplayName": "[LocalizedText Strings/Objects:{{ModId}}_FlavoredIcing %PRESERVED_DISPLAY_NAME]",
+                  "PreserveId": "DROP_IN",
+                  "CopyPrice": true,
+                  "CustomData": {
+                    "selph.ExtraMachineConfig.CopyColor": "true",
+                    "selph.ExtraMachineConfig.RequirementId.1": "{{ModId}}_Icing",
+                    "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:Flavored.IcingRequirementInvalidMsg.1}}"
+                  },
+                  "PriceModifiers": [
+                    {
+                      "Id": "FlavoredIcing",
+                      "Modification": "Multiply",
+                      "Amount": 2
+                    },
+                    {
+                      "Id": "IcingBase",
+                      "Modification": "Add",
+                      "Amount": 250
+                    }
+                  ]
+                }
+              ],
+              "MinutesUntilReady": 180
+            },
+            {
+              "Id": "{{ModId}}_PinkCottonCandy",
+              "Triggers": [
+                {
+                  "RequiredItemId": "{{ModId}}_PinkCottonCandyWool"
+                }
+              ],
+              "OutputItem": [
+                {
+                  "ItemId": "{{ModId}}_PinkCottonCandy"
+                }
+              ],
+              "MinutesUntilReady": 60
+            },
+            {
+              "Id": "{{ModId}}_BlueCottonCandy",
+              "Triggers": [
+                {
+                  "RequiredItemId": "{{ModId}}_BlueCottonCandyWool"
+                }
+              ],
+              "OutputItem": [
+                {
+                  "ItemId": "{{ModId}}_BlueCottonCandy",
+                  "CopyQuality": true
+                }
+              ],
+              "MinutesUntilReady": 60
+            },
+            {
+              "Id": "{{ModId}}_CreamsicleBars",
+              "Triggers": [
+                {
+                  "RequiredItemId": "{{ModId}}_OrangeCreamsicle",
+                  "CopyQuality": true
+                }
+              ],
+              "OutputItem": [
+                {
+                  "ItemId": "{{ModId}}_CreamsicleBars"
+                }
+              ],
+              "MinutesUntilReady": 60
+            },
+             {
+              "Id": "{{ModId}}_LgCreamsicleBars",
+              "Triggers": [
+                {
+                  "RequiredItemId": "{{ModId}}_LgOrangeCreamsicle",
+                  "CopyQuality": true
+                }
+              ],
+              "OutputItem": [
+                {
+                  "ItemId": "{{ModId}}_CreamsicleBars"
+                }
+              ],
+              "MinutesUntilReady": 80
+            },
+            {
+              "Id": "{{ModId}}_KeyLimeBars",
+              "Triggers": [
+                {
+                  "RequiredItemId": "{{ModId}}_KeyLime",
+                  "CopyQuality": true
+                }
+              ],
+              "OutputItem": [
+                {
+                  "ItemId": "{{ModId}}_KeyLimeBars"
+                }
+              ],
+              "MinutesUntilReady": 60
+            },
+             {
+              "Id": "{{ModId}}_LgKeyLimeBars",
+              "Triggers": [
+                {
+                  "RequiredItemId": "{{ModId}}_LgKeyLime",
+                  "CopyQuality": true
+                }
+              ],
+              "OutputItem": [
+                {
+                  "ItemId": "{{ModId}}_KeyLimeBars"
+                }
+              ],
+              "MinutesUntilReady": 80
+            },
+            {
+              "Id": "{{ModId}}_LemonSherbertBars",
+              "Triggers": [
+                {
+                  "RequiredItemId": "{{ModId}}_LemonCurdSpread"
+                }
+              ],
+              "OutputItem": [
+                {
+                  "ItemId": "{{ModId}}_LemonSherbertBars",
+                  "CustomData": {
+                    "selph.ExtraMachineConfig.RequirementId.1": "184",
+                    "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:LemonSherbertBars.RequirementInvalidMsg}}"
+                  }
+                }
+              ],
+              "MinutesUntilReady": 60
+            },
+            {
+              "Id": "{{ModId}}_Jawbreakerhalf",
+              "Triggers": [
+                {
+                  "RequiredItemId": "{{ModId}}_JawbreakerEgg"
+                }
+              ],
+              "OutputItem": [
+                {
+                  "ItemId": "{{ModId}}_Jawbreakerhalf",
+                  "CustomData": {
+                    "selph.ExtraMachineConfig.ExtraOutputIds": "{{ModId}}_JawbreakerExtra"
+                  }
+                }
+              ],
+              "MinutesUntilReady": 80
+            },
+            {
+              "Id": "{{ModId}}_MiniJawbreakers",
+              "Triggers": [
+                {
+                  "RequiredItemId": "{{ModId}}_JawbreakerEgg"
+                }
+              ],
+              "OutputItem": [
+                {
+                  "ItemId": "{{ModId}}_MiniJawbreakers",
+                  "CustomData": {
+                    "selph.ExtraMachineConfig.RequirementId.1": "286",
+                    "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:MiniJawbreakers.RequirementInvalidMsg}}",
+                    "selph.ExtraMachineConfig.SlingshotDamage": 15,
+                    "selph.ExtraMachineConfig.SlingshotExplosiveRadius": 3,
+                    "selph.ExtraMachineConfig.SlingshotExplosiveDamage": 6
+                  }
+                }
+              ],
+              "MinutesUntilReady": 120
+            },
+            {
+              "Id": "{{ModId}}_BananaPudding",
+              "Triggers": [
+                {
+                  "RequiredItemId": "{{ModId}}_BananaPuddingEgg"
+                }
+              ],
+              "OutputItem": [
+                {
+                  "ItemId": "{{ModId}}_BananaPudding"
+                }
+              ],
+              "MinutesUntilReady": 80
+            },
+            {
+              "Id": "{{ModId}}_Icing",
+              "Triggers": [
+                {
+                  "RequiredItemId": "{{ModId}}_IcingHorn"
+                }
+              ],
+              "OutputItem": [
+                {
+                  "ItemId": "{{ModId}}_Icing"
+                }
+              ],
+              "MinutesUntilReady": 60
+            },
+            {
+              "Id": "{{ModId}}_Gingerbread",
+              "Triggers": [
+                {
+                  "RequiredItemId": "{{ModId}}_GingerbreadBatter",
+                  "CopyQuality": true
+                }
+              ],
+              "OutputItem": [
+                {
+                  "ItemId": "{{ModId}}_Gingerbread"
+                }
+              ],
+              "MinutesUntilReady": 60
+            },
+            {
+              "Id": "{{ModId}}_LgGingerbread",
+              "Triggers": [
+                {
+                  "RequiredItemId": "{{ModId}}_LgGingerbreadBatter",
+                  "CopyQuality": true
+                }
+              ],
+              "OutputItem": [
+                {
+                  "ItemId": "{{ModId}}_Gingerbread"
+                }
+              ],
+              "MinutesUntilReady": 90
+            },
+            {
+              "Id": "{{ModId}}_VanillaWaferCookies",
+              "Triggers": [
+                {
+                  "RequiredItemId": "{{ModId}}_VanillaWaferFeather"
+                }
+              ],
+              "OutputItem": [
+                {
+                  "ItemId": "{{ModId}}_VanillaWaferCookies"
+                }
+              ],
+              "MinutesUntilReady": 60
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

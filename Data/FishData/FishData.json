@@ -1,0 +1,172 @@
+{
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Fish",
+            "FromFile": "Assets/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Fish",
+            "Entries": {
+                "{{ModId}}_SwedishFish": "SwedishFish/30/dart/1/12/600 1900/spring summer fall winter/both/683 .3/1/.65/.1/0/true",
+                "{{ModId}}_BlueberryLemonadeEel": "BlueberryLemonade Eel/70/smooth/12/80/1600 2600/spring summer/both/689 .35 680 .1/3/.55/.1/0/true",
+                "{{ModId}}_SourWatermelonEel": "SourWatermelonEel/70/smooth/12/80/1600 2600/fall winter/both/689 .35 680 .1/3/.55/.1/0/true",
+                "{{ModId}}_PurpleGumdropPuffer": "PurpleGumdropPuffer/80/floater/1/36/1200 1600/summer/sunny/690 .4 685 .1/4/.3/.5/0/true",
+                "{{ModId}}_BlueGumdropPuffer": "PurpleGumdropPuffer/80/floater/1/36/1200 1600/summer/sunny/690 .4 685 .1/4/.3/.5/0/true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "TargetField": [
+                "Beach",
+                "Fish" 
+            ],
+            "Entries": {
+                "{{ModId}}_BlueGumdropPuffer": {
+                    "ItemId": "{{ModId}}_BlueGumdropPuffer",
+                    "Condition": "LOCATION_SEASON Here winter",
+                    "FishAreaId": "Ocean"
+                },
+                "{{ModId}}_BlueberryLemonadeEel": {
+                    "ItemId": "{{ModId}}_BlueberryLemonadeEel",
+                    "Condition": "LOCATION_SEASON Here spring summer",
+                    "FishAreaId": "Ocean"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "TargetField": [
+                "Forest",
+                "Fish"
+            ],
+            "Entries": {
+                "{{ModId}}_SwedishFish": {
+                    "ItemId": "{{ModId}}_SwedishFish",
+                    "Condition": "LOCATION_SEASON Here spring summer fall winter",
+                    "FishAreaId": "River"
+                },
+                "{{ModId}}_SourWatermelonEel": {
+                    "ItemId": "{{ModId}}_SourWatermelonEel",
+                    "Condition": "LOCATION_SEASON Here fall winter",
+                    "FishAreaId": "River"
+                },
+                "{{ModId}}_PurpleGumdropPuffer": {
+                    "ItemId": "{{ModId}}_PurpleGumdropPuffer",
+                    "Condition": "LOCATION_SEASON Here winter",
+                    "FishAreaId": "Lake"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "TargetField": [
+                "Mountain",
+                "Fish"
+            ],
+            "Entries": {
+                "{{ModId}}_PurpleGumdropPuffer": {
+                    "ItemId": "{{ModId}}_PurpleGumdropPuffer",
+                    "Condition": "LOCATION_SEASON Here winter",
+                    "FishAreaId": "Lake"
+                },
+                 "{{ModId}}_SourWatermelonEel": {
+                    "ItemId": "{{ModId}}_SourWatermelonEel",
+                    "Condition": "LOCATION_SEASON Here fall winter",
+                    "FishAreaId": "Lake"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "LogName": "Fishpond",
+            "Target": "Data/FishPondData",
+            "Entries": {
+                "{{ModId}}_SwedishFish": {
+                    "Id": "{{ModId}}_SwedishFish",
+                    "RequiredTags": [
+                        "{{ModId}}_SwedishFish"
+                    ],
+                    "SpawnTime": 3,
+                    "ProducedItems": [
+                        {
+                            "RequiredPopulation": 9,
+                            "Chance": 0.06,
+                            "ItemID": "{{ModId}}_MiniSwedishFish",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 3
+                        }
+                    ]
+                }
+            },
+            "{{ModId}}_PurpleGumdropPuffer": {
+                "Id": "{{ModId}}_PurpleGumdropPuffer",
+                "RequiredTags": [
+                    "{{ModId}}_PurpleGumdropPuffer"
+                ],
+                "SpawnTime": 3,
+                "ProducedItems": [
+                    {
+                        "RequiredPopulation": 9,
+                        "Chance": 0.06,
+                        "ItemID": "{{ModId}}_PurpleGumdrop",
+                        "MinQuantity": 1,
+                        "MaxQuantity": 3
+                    }
+                ]
+            },
+            "{{ModId}}_BlueGumdropPuffer": {
+                "Id": "{{ModId}}_BlueGumdropPuffer",
+                "RequiredTags": [
+                    "{{ModId}}_BlueGumdropPuffer"
+                ],
+                "SpawnTime": 3,
+                "ProducedItems": [
+                    {
+                        "RequiredPopulation": 9,
+                        "Chance": 0.06,
+                        "ItemID": "{{ModId}}_BlueGumdrop",
+                        "MinQuantity": 1,
+                        "MaxQuantity": 3
+                    }
+                ]
+            },
+            "{{ModId}}_SourWatermelonEel": {
+                "Id": "{{ModId}}_SourWatermelonEel",
+                "RequiredTags": [
+                    "{{ModId}}_SourWatermelonEel"
+                ],
+                "SpawnTime": 3,
+                "ProducedItems": [
+                    {
+                        "RequiredPopulation": 9,
+                        "Chance": 0.06,
+                        "ItemID": "{{ModId}}_SourWatermelonStrip",
+                        "MinQuantity": 1,
+                        "MaxQuantity": 3
+                    }
+                ]
+            },
+            "{{ModId}}_BlueberryLemonadeEel": {
+                "Id": "{{ModId}}_BlueberryLemonadeEel",
+                "RequiredTags": [
+                    "{{ModId}}_BlueberryLemonadeEel"
+                ],
+                "SpawnTime": 3,
+                "ProducedItems": [
+                    {
+                        "RequiredPopulation": 9,
+                        "Chance": 0.06,
+                        "ItemID": "{{ModId}}_BlueberryLemonadeSourStrip",
+                        "MinQuantity": 1,
+                        "MaxQuantity": 3
+                    }
+                ]
+            }
+        }
+    ]
+}
